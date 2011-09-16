@@ -1,8 +1,9 @@
 pkgname=iview
 _proj="python-$pkgname"
-pkgver=69
-pkgrel=1
-pkgdesc="Alternative frontend to ABC's Iview"
+_revno=69
+pkgver="$_revno+0.2"  # Version number from iview.config.version
+pkgrel=vad0
+pkgdesc="Alternative frontend for the ABC TV's Iview service"
 url="https://jeremy.visser.name/2009/08/$_proj"
 arch=(any)
 license=(GPL3)
@@ -18,9 +19,9 @@ build() {
     
     if test -d "$_proj"; then
         cd "$_proj"
-        bzr pull "$_loc" --revision "$pkgver"
+        bzr pull "$_loc" --revision "$_revno"
     else
-        bzr branch "$_loc" --revision "$pkgver" "$_proj"
+        bzr branch "$_loc" --revision "$_revno" "$_proj"
         cd "$_proj"
     fi
     
