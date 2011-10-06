@@ -7,25 +7,26 @@ pkgdesc="Alternative frontend for the ABC TV's Iview service"
 url="https://jeremy.visser.name/2009/08/$_proj"
 arch=(any)
 license=(GPL3)
-makedepends=(bzr python2)
+makedepends=(bzr python2 patch)
 depends=(python2 python-beautifulsoup rtmpdump)
 provides=("$_proj")
 _loc="https+urllib://jeremy.visser.name/bzr/$_proj"
-source=(python2.diff)
-md5sums=(674dc19eb9c7a2a23bde17a9f2874c58)
+source=(setup.diff)
+md5sums=(b907abcbfc89349b4871e61839732946)
 
 build() {
     cd "$srcdir"
     
     if test -d "$_proj"; then
         cd "$_proj"
+        bzr revert
         bzr pull "$_loc" --revision "$_revno"
     else
         bzr branch "$_loc" --revision "$_revno" "$_proj"
         cd "$_proj"
     fi
     
-    patch -p0 < ../python2.diff
+    patch -p0 < ../setup.diff
 }
 
 package() {
