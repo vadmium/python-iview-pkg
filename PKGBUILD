@@ -1,14 +1,15 @@
 pkgname=iview
 _proj="python-$pkgname"
-_revno=69
+_revno=71
 pkgver="$_revno+0.2"  # Version number from iview.config.version
 pkgrel=vad0
-pkgdesc="Alternative frontend for the ABC TV's Iview service"
+pkgdesc="Alternative frontend for ABC TV's Iview service"
 url="https://jeremy.visser.name/2009/08/$_proj"
 arch=(any)
 license=(GPL3)
 makedepends=(bzr python2 patch)
 depends=(python2 python-beautifulsoup rtmpdump)
+optdepends=("socksipy: Proxy support")
 provides=("$_proj")
 _loc="https+urllib://jeremy.visser.name/bzr/$_proj"
 source=(setup.diff)
