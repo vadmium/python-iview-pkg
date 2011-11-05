@@ -13,7 +13,7 @@ optdepends=("socksipy: Proxy support")
 provides=("$_proj")
 _loc="https+urllib://jeremy.visser.name/bzr/$_proj"
 source=(setup.diff)
-md5sums=(b907abcbfc89349b4871e61839732946)
+md5sums=(315f3636efe53b02972c79b65269b608)
 
 build() {
     cd "$srcdir"
