@@ -1,8 +1,8 @@
 pkgname=iview
 _proj="python-$pkgname"
-_revno=71
+_revno=73
 pkgver="$_revno+0.2"  # Version number from iview.config.version
-pkgrel=vad0
+pkgrel=1
 pkgdesc="Alternative frontend for ABC TV's Iview service"
 url="https://jeremy.visser.name/2009/08/$_proj"
 arch=(any)
