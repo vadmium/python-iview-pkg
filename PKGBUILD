@@ -9,7 +9,10 @@ arch=(any)
 license=(GPL3)
 makedepends=(bzr python2 patch)
 depends=(python2 python-beautifulsoup rtmpdump)
-optdepends=("socksipy: Proxy support")
+optdepends=(
+    "socksipy: Proxy support"
+    "pygtk: GTK frontend"
+)
 provides=("$_proj")
 _loc="https+urllib://jeremy.visser.name/bzr/$_proj"
 source=(setup.diff)
