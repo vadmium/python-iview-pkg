@@ -10,7 +10,7 @@ url="https://jeremy.visser.name/2009/08/$_proj"
 arch=(any)
 license=(GPL3)
 makedepends=(python2 patch)
-depends=(python2 python-beautifulsoup rtmpdump)
+depends=(python2 python2-beautifulsoup3 rtmpdump)
 optdepends=(
     "socksipy: Proxy support"
     "pygtk: GTK frontend"
