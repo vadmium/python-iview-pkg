@@ -10,7 +10,7 @@ license=(GPL3)
 makedepends=(python3)
 depends=(python3)
 optdepends=(
-    "python3-socksipy: Proxy support"
+    "python-socks: Proxy support"
     "python-gobject: GTK frontend"
     "gtk3: GTK frontend"
     "rtmpdump: News 24 live stream"
