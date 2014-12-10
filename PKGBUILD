@@ -1,4 +1,3 @@
-pkgbase=python-iview
 pkgname=iview  # TODO: python-iview
 _rev=c4220ab
 pkgver="351+g$_rev"  # Commit count: git rev-list --count "$_rev"
