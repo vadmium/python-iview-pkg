@@ -1,6 +1,6 @@
 pkgname=iview  # TODO: python-iview
-_rev=99a2e78
-pkgver="385+g$_rev"  # Commit count: git rev-list --count "$_rev"
+_rev=f0981c8
+pkgver="386+g$_rev"  # Commit count: git rev-list --count "$_rev"
 pkgrel=1
 pkgdesc="Alternative frontend for ABC TV's Iview service"
 url="https://github.com/vadmium/python-iview"
@@ -17,7 +17,7 @@ optdepends=(
 provides=(python-iview)
 
 source=("https://github.com/vadmium/python-iview/tarball/$_rev")
-md5sums=(2e51f842ddda7e9bb841edd0113aeae8)
+md5sums=(41913acfdedf39d386b7c49c7c897cf1)
 
 package() {
     cd "$srcdir/vadmium-python-iview-$_rev"
